@@ -3,10 +3,10 @@ import shutil
 
 path_downloads = "C:\\Users\\KEVINSANDOVAL\\Desktop\\Voluntariado\\taller1\\Descargas\\"
 
-text_extensions = ('.txt', '.doc', '.docx', 'pptx', '.pdf')
+text_extensions = ('.txt', '.doc', '.docx', '.pptx', '.pdf')
 video_extensions = ('.mp4', '.mkv', '.flv', '.wmv')
 audio_extensions = ('.mp3', '.wma', '.wav', '.flac')
-image_extensions = ('.jpg', '.png', 'jpeg', '.gif', '.ico', '.svg')
+image_extensions = ('.jpg', '.png', '.jpeg', '.gif', '.ico', '.svg')
 compressed_extensions = ('.zip', '.rar')
 
 def order(file, extension):
