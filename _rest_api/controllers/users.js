@@ -42,11 +42,16 @@ const updateUser = (req, res) => {
     
     const user = data.find((user) => user.id == id)
 
-    if(firstName) user.firstName = firstName;
-    if(lastName) user.lastName = lastName;
-    if(age) user.age = age;
+    if (user != undefined){
+        if(firstName) user.firstName = firstName;
+        if(lastName) user.lastName = lastName;
+        if(age) user.age = age;
+    
+        res.status(201).json('User with the id ' + id + ' has been updated');
+    } else {
+        res.status(404).json({error : "User id not found"});
+    }
 
-    res.status(201).json('User with the id ' + id + ' has been updated');
 };
 
 module.exports = {
