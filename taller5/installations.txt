@@ -1,0 +1,2 @@
+pip install pywhatkit
+pip install schedule
